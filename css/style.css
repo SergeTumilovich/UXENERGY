@@ -102,7 +102,7 @@ body{
 }
 
 .main-menu-item{
-  margin-right: 40px;
+  margin-right: 35px;
 }
 
 .main-menu-item a{
@@ -149,20 +149,33 @@ body{
 
 .promo{
   background-color: #0099ff;
+  min-height: 500px;
+  padding: 0 115px;
+  display: flex;
+  flex-direction: column;
 }
 
 .lead{
   font-size: 30px;
   line-height: 45px;
+  max-width: 360px;
   color: white;
   font-weight: bold;
+  margin-top: 70px;
 }
 
 .promo span{
   color: #284a6f;
 }
 
+.promo-more{
+  display: inline-block;
+  margin: 0;
+  margin-top: 35px;
+}
+
 .learnmore{
+  margin: 0;
   font-size: 16px;
   color: #284a6f;
   text-transform: uppercase;
@@ -176,24 +189,65 @@ body{
   line-height: 45px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-left: 45px;
+}
+
+.features{
+  padding: 0 115px;
 }
 
 .features h2{
+  margin: 0;
   font-size: 45px;
   font-weight: bold;
   line-height: 47px;
   color: #284a6f;
+  text-align: center;
+  margin-top: 75px;
+  text-transform: capitalize;
 }
 
 .features-catalog{
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 85px;
+}
+
+.feature-item{
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.feature-item::before{
+  margin: 0 auto;
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+  content: "stub";
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  color: black;
+
 }
 
 .feature-item h3{
+  margin: 0;
+  margin-top: 20px;
+  text-align: center;
   font-size: 24px;
   line-height: 47px;
   font-weight: bold;
   color: #284a6f;
+}
+
+.feature-item p{
+  max-width: 300px;
+  text-align: center;
 }
