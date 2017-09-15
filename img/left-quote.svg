@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg fill-opacity="1" xmlns:xlink="http://www.w3.org/1999/xlink" color-rendering="auto" color-interpolation="auto" text-rendering="auto" stroke="black" stroke-linecap="square" stroke-miterlimit="10" shape-rendering="auto" stroke-opacity="1" fill="black" stroke-dasharray="none" font-weight="normal" stroke-width="1" xmlns="http://www.w3.org/2000/svg" font-family="&apos;Dialog&apos;" font-style="normal" stroke-linejoin="miter" font-size="12" stroke-dashoffset="0" image-rendering="auto">
+  <!--Unicode Character 'LEFT DOUBLE QUOTATION MARK' (U+201C)-->
+  <defs id="genericDefs" />
+  <g>
+    <g>
+      <path d="M85.5 186.0469 Q70.1719 192.2344 70.0312 214.1719 L83.25 214.1719 L83.25 243.5625 L56.1094 243.5625 L56.1094 220.5 Q56.1094 210.5156 57.3047 203.1328 Q58.5 195.75 63.5625 188.3672 Q68.625 180.9844 79.1719 176.2031 L85.5 186.0469 ZM41.7656 186.0469 Q26.4375 192.2344 26.1562 214.1719 L39.5156 214.1719 L39.5156 243.5625 L12.375 243.5625 L12.375 220.5 Q12.375 210.5156 13.5703 203.1328 Q14.7656 195.75 19.7578 188.3672 Q24.75 180.9844 35.4375 176.2031 L41.7656 186.0469 Z" stroke="none" />
+    </g>
+  </g>
+</svg>
