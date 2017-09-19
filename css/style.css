@@ -18,33 +18,28 @@ body{
 }
 
 .header-top{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 52px;
+  justify-content: space-between;
+  min-height: 52px;
   padding: 0 115px;
   background-color: #303030;
 }
 
 .top-menu{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-top: 12px;
   list-style: none;
+  flex-grow: 1;
 }
 
 .top-menu-item{
   margin-right: 40px;
   margin-left: 7px;
+  max-width: 90px;
 }
 
 .top-menu-item a, .modal-login{
@@ -73,7 +68,7 @@ body{
 }
 
 .header-main{
-  height: 91px;
+  min-height: 91px;
   padding: 0 115px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,10 +119,12 @@ body{
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .main-menu-item{
   margin-right: 38px;
+  max-width: 120px;
 }
 
 .main-menu-item a{
@@ -207,12 +204,14 @@ body{
   display: inline-block;
   margin: 0;
   margin-top: 35px;
+  max-width: 400px;
 }
 
 .learnmore{
   margin: 0;
   font-size: 16px;
   color: #284a6f;
+  max-width: 100px;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -274,7 +273,8 @@ body{
 }
 
 .features h2{
-  margin: 0;
+  margin: 0 auto;
+  max-width: 300px;
   font-size: 45px;
   font-weight: bold;
   line-height: 47px;
@@ -320,6 +320,7 @@ body{
 
 .feature-item h3{
   margin: 0;
+  max-width: 300px;
   margin-top: 20px;
   text-align: center;
   font-size: 24px;
@@ -395,6 +396,7 @@ body{
 
 .mobile-description h2{
   margin: 0;
+  max-width: 500px;
   font-size: 45px;
   line-height: 47px;
   margin-top: 130px;
@@ -690,16 +692,11 @@ body{
   background-position: 115px 60px,
   1140px 380px, -290px 205px, 530px -270px;
   background-size: auto, auto, auto, auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-top: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .reviews-catalog{
@@ -715,6 +712,7 @@ body{
       -ms-flex-align: center;
           align-items: center;
   margin-top: 160px;
+  overflow-x: visible;
 }
 
 .review{
@@ -750,6 +748,7 @@ body{
 .review:last-of-type::before{
   content: "";
   position: absolute;
+  top: 0; left: 0;
   width: 100%;
   height: 100%;
   background-color: white;
