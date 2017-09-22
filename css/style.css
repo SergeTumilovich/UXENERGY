@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700');
 
 body{
-  width: 1400px;/*Для 1400px ширины должно быть соответствие макету. Не забыть потом перевести всё в % и em*/
-  margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
-  overflow-x: hidden;
   font-size: 16px;
   line-height: 24px;
   color: #999;
+}
+
+.wrapper{
+  min-width: 1400px;/*Для 1400px ширины должно быть соответствие макету. Не забыть потом перевести всё в % и em*/
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .visually-hidden{
@@ -20,8 +23,8 @@ body{
 .header-top{
   display: flex;
   justify-content: space-between;
-  min-height: 52px;
-  padding: 0 115px;
+  min-height: 3.25em;
+  padding: 0 8.2%;
   background-color: #303030;
 }
 
@@ -31,20 +34,20 @@ body{
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-top: 12px;
+  margin-top: 0.75em;
   list-style: none;
   flex-grow: 1;
 }
 
 .top-menu-item{
-  margin-right: 40px;
-  margin-left: 7px;
-  max-width: 90px;
+  margin-right: 3.6%;
+  margin-left: 0.5%;
+  max-width: 9%;
 }
 
 .top-menu-item a, .modal-login{
   text-decoration: none;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: normal;
   font-weight: bold;
   color: #fff;
@@ -53,7 +56,7 @@ body{
 
 .login{
   position: relative;
-  padding-top: 13px;
+  padding-top: 1.1%;
 }
 
 .modal-login::before{
@@ -68,8 +71,8 @@ body{
 }
 
 .header-main{
-  min-height: 91px;
-  padding: 0 115px;
+  min-height: 5.59em;/*91px*/
+  padding: 0 8.2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,21 +94,21 @@ body{
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 2em;
   color: #999;
   font-weight: bold;
-  letter-spacing: -1px;
+  letter-spacing: -0.03em;
   margin-right: 28px;
 }
 
 .logo img{
   font-size: 0px;
-  margin-left: 2px;
-  margin-right: 10px;
+  margin-left: 0.14%;
+  margin-right: 0.7%;
 }
 
 .logo p{
-  margin-top: 24px;
+  margin-top: 0.875em;
 }
 
 .logo span{
@@ -129,7 +132,7 @@ body{
 
 .main-menu-item a{
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.875em;
   text-transform: uppercase;
   font-weight: bold;
   color: #03a6f2;
@@ -150,17 +153,14 @@ body{
 }
 
 .btn{
-  width: 145px;
+  display: block;
+  width: 12.3%;
   height: 45px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
   border-radius: 20px;
-  margin: 22px 0;
   padding-top: 11px;
-}
-
-.btn{
   background-color: #00d664;
   color: white;
   font-size: 14px;
@@ -171,8 +171,8 @@ body{
 
 .promo{
   background-color: white;
-  min-height: 500px;
-  padding: 0 115px;
+  min-height: 31.25em;
+  padding: 0 8.2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,16 +184,17 @@ body{
   background: url("../img/worldmap.png") -147px 30px, -webkit-linear-gradient( left, #0099ff 20%,transparent), url("../img/promo.jpg") right;
   background: url("../img/worldmap.png") -147px 30px, -o-linear-gradient( left, #0099ff 20%,transparent), url("../img/promo.jpg") right;
   background: url("../img/worldmap.png") -147px 30px, linear-gradient( to right, #0099ff 20%,transparent), url("../img/promo.jpg") right;
+  background-size: 60% auto, auto, 56% auto;
   background-repeat: no-repeat;
 }
 
 .lead{
-  font-size: 30px;
-  line-height: 45px;
-  max-width: 360px;
+  font-size: 1.875em;
+  line-height: 1.5em;
+  max-width: 31.7%;
   color: white;
   font-weight: bold;
-  margin-top: 70px;
+  margin-top: 2.4em;
 }
 
 .promo span{
@@ -689,8 +690,8 @@ body{
   url("../img/worldmap.png"),
   url("../img/worldmap.png");
   background-repeat: no-repeat;
-  background-position: 115px 60px,
-  1140px 380px, -290px 205px, 530px -270px;
+  background-position: 400px 60px,
+  1425px 380px, -290px 205px, 530px -270px;
   background-size: auto, auto, auto, auto;
   margin-top: 100px;
   display: inline-block;
