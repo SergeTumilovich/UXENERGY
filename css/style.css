@@ -204,15 +204,15 @@ body{
 .promo-more{
   display: inline-block;
   margin: 0;
-  margin-top: 35px;
-  max-width: 400px;
+  margin-top: 2.2em;
+  max-width: 30.6%;
 }
 
 .learnmore{
   margin: 0;
-  font-size: 16px;
+  font-size: 1em;
   color: #284a6f;
-  max-width: 100px;
+  max-width: 25%;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -220,11 +220,11 @@ body{
 .promo-more a{
   text-decoration: none;
   color: white;
-  font-size: 14px;
-  line-height: 45px;
+  font-size: 0.875em;
+  line-height: 3.3em;
   font-weight: bold;
   text-transform: uppercase;
-  margin-left: 45px;
+  margin-left: 12%;
 }
 
 .promo-more a::after{
@@ -237,8 +237,8 @@ body{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 23px;
-  margin-left: 3px;
+  margin-top: 1.44em;
+  margin-left: 0.2%;
 }
 
 .slider{
@@ -270,18 +270,18 @@ body{
 }
 
 .features{
-  padding: 0 115px;
+  padding: 0 8.2%;
 }
 
 .features h2{
   margin: 0 auto;
-  max-width: 300px;
-  font-size: 45px;
+  max-width: 27%;
+  font-size: 2.8em;
   font-weight: bold;
-  line-height: 47px;
+  line-height: 1em;
   color: #284a6f;
   text-align: center;
-  margin-top: 75px;
+  margin-top: 1.8em;
   text-transform: capitalize;
 }
 
@@ -292,9 +292,10 @@ body{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 85px;
+  margin-top: 5em;
 }
 
 .feature-item{
@@ -374,14 +375,14 @@ body{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 115px;
+  padding: 0 8.2%;
   background-color: #fafafa;
   background-repeat: no-repeat;
   background-position: right;
   background-image: url("../img/worldmap.png");
   overflow-y: visible;
-  margin-top: 60px;
-  height: 600px;
+  margin-top: 4em;
+  height: 37.5em;
 }
 
 .mobile-description{
@@ -392,17 +393,16 @@ body{
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 500px;
+  width: 43%;
 }
 
 .mobile-description h2{
   margin: 0;
-  max-width: 500px;
-  font-size: 45px;
-  line-height: 47px;
-  margin-top: 130px;
+  font-size: 2.775em;
+  line-height: 1em;
+  margin-top: 2.95em;
   color: #284a6f;
-  margin-left: -5px;
+  margin-left: -1%;
   font-weight: bold;
 }
 
@@ -416,7 +416,7 @@ body{
           flex-direction: row;
   list-style: none;
   padding: 0;
-  margin-top: 42px;
+  margin-top: 2.65em;
 }
 
 .advantages .statistics-item{
