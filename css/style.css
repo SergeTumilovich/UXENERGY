@@ -76,9 +76,10 @@ body{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
+  /*-webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start;
+          justify-content: flex-start;*/
+  justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -122,7 +123,8 @@ body{
   list-style: none;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
+  min-width: 100%;
+  flex-grow: 1;
 }
 
 .main-menu-item{
@@ -420,19 +422,19 @@ body{
 }
 
 .advantages .statistics-item{
-  margin-right: 60px;
+  margin-right: 12%;
 }
 
 .statistics-item span{
-  font-size: 45px;
-  line-height: 24px;
+  font-size: 2.87em;
+  line-height: 0.5em;
   color: #0099ff;
   font-weight: bold;
 }
 
 .statistics-item p{
   margin: 0;
-  margin-top: 10px;
+  margin-top: 0.6em;
 }
 
 .stores{
@@ -445,7 +447,7 @@ body{
           flex-direction: row;
   list-style: none;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 1.9em;
 }
 
 .store{
@@ -456,15 +458,14 @@ body{
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-
-  margin-right: 50px;
+  margin-right: 10%;
 }
 
 .store a{
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: bold;
-  line-height: 45px;
+  line-height: 2.875em;
   color: #284a6f;
   text-transform: uppercase;
 }
@@ -503,12 +504,15 @@ body{
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 670px;
-  margin-left: 170px;
+  height: 112%;
+  position: relative;
+  left: 43%;
+  transform: translateX(-50%);
+  /*margin-left: 170px;*/
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin-top: -25px;
+  margin-top: -1.56em;
 }
 
 
@@ -538,20 +542,18 @@ body{
 }
 
 .image-container{
-  width: 320px;
+  width: 48.2%;
+  max-width: 320px;
   height: 100%;
   background-color: transparent;
   background-image: url("../img/sprites.png");
   background-position: 0px 22px;
   background-repeat: no-repeat;
-  font-size: 50px;
-  font-weight: bold;
-  color: black;
 }
 
 .statistics{
-  padding: 0 115px;
-  margin-top: 110px;
+  padding: 0 8.2%;
+  margin-top: 6.875em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,18 +573,18 @@ body{
 }
 
 .statistics .btn{
-  width: 195px;
-  height: 55px;
+  width: 16.9%;
+  height: 4em;
   border-radius: 25px;
-  padding-top: 15px;
-  margin-top: 70px;
+  padding-top: 1.25em;
+  margin-top: 4.85em;
   -ms-flex-item-align: center;
       align-self: center;
 }
 
 .video-review{
-  padding: 0 115px;
-  margin-top: 50px;
+  padding: 0 8.2%;
+  margin-top: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,15 +596,15 @@ body{
 
 .video-review h2{
   margin: 0;
-  font-size: 45px;
-  line-height: 47px;
+  font-size: 2.825em;
+  line-height: 1.04em;
   text-align: center;
   color: #284a6f;
 }
 
 .video-content{
   position: relative;
-  margin-top: 85px;
+  margin-top: 5.27em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,8 +626,8 @@ body{
 .video-preloader{
   position: relative;
   display: block;
-  width: 670px;
-  height: 446px;
+  width: 57%;
+  height: 27.87em;
 }
 
 .video-preloader::before{
@@ -633,8 +635,8 @@ body{
   content: "";
   position: absolute;
   display: block;
-  width: 670px;
-  height: 446px;
+  width: 100.4%;
+  height: 100%;
 }
 
 .video-preloader:hover::before,
@@ -645,45 +647,44 @@ body{
 .review-description{
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-top: 150px;
+  margin-top: 9.375em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #fafafa;
-  min-height: 250px;
-  width: 500px;
-  padding-left: 55px;
+  min-height: 15.625em;
+  width: 43%;
+  padding-left: 4.9%;
 }
 
 .review-description h3{
   margin: 0;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1em;
+  line-height: 1.5em;
   font-weight: 600;
   color: black;
-  margin-top: 50px;
-  margin-left: 2px;
+  margin-top: 3.125em;
+  margin-left: 0.4%;
 }
 
 .review-description p{
   margin: 0;
-  margin-top: 23px;
-  margin-left: 3px;
+  margin-top: 1.4em;
   font-style: italic;
-  max-width: 365px;
+  max-width: 82%;
   color: black;
 }
 
 .role{
   margin: 0;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1em;
+  line-height: 1.5em;
   font-weight: normal;
   color: #c0bebe;
 }
 
 .testimonials{
   position: relative;
-  height: 576px;
+  height: 36em;
   background-color: #fafafa;
   background-image: url("../img/quotes.png"),
   url("../img/quotes-reversed.png"),
@@ -693,7 +694,7 @@ body{
   background-position: 400px 60px,
   1425px 380px, -290px 205px, 530px -270px;
   background-size: auto, auto, auto, auto;
-  margin-top: 100px;
+  margin-top: 6.25em;
   display: inline-block;
   vertical-align: middle;
   left: 50%;
@@ -712,7 +713,7 @@ body{
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 160px;
+  margin-top: 10em;
   overflow-x: visible;
 }
 
@@ -798,20 +799,20 @@ body{
 }
 
 .blog{
-  margin-top: 42px;
-  max-height: 810px;
-  padding: 0 115px;
+  margin-top: 2.625em;
+  max-height: 50,625em;
+  padding: 0 8.2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
+  margin-bottom: 5em;
 }
 
 .blog h2{
   text-align: center;
-  font-size: 45px;
-  line-height: 47px;
+  font-size: 2.8125em;
+  line-height: 1.05em;
   color: #284a6f;
   text-transform: capitalize;
 }
@@ -821,7 +822,12 @@ body{
   display: -ms-flexbox;
   display: flex;
   flex-direction: row;
-  margin-top: 47px;
+  width: 100%;
+  margin-top: 2.95em;
+}
+
+.other-posts{
+  width: 40%;
 }
 
 .post{
@@ -836,11 +842,11 @@ body{
           box-shadow: 0px 3px 18px 0px rgba(0, 153, 255, 0.1);
   padding-bottom: 35px;
   margin-bottom: 25px;
-  width: 470px;
+  width: 100%;
 }
 
 .post:last-of-type{
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .post img{
@@ -849,25 +855,31 @@ body{
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+  width: 100%;
+  height: 33%;
+}
+
+.promo-post img{
+  height: 66%;
 }
 
 .post h3{
   margin: 0;
-  margin-top: 32px;
-  font-size: 16px;
-  line-height: 24px;
+  margin-top: 2em;
+  font-size: 1em;
+  line-height: 1.5em;
   font-weight: bold;
   color: black;
-  margin-left: 30px;
-  max-width: 420px;
+  margin-left: 6%;
+  max-width: 66%;
 }
 
 
 .post p{
   margin: 0;
-  margin-top: 14px;
-  margin-left: 30px;
-  max-width: 400px;
+  margin-top: 0.875em;
+  margin-left: 6%;
+  max-width: 85%;
   color: black;
 }
 
@@ -877,32 +889,32 @@ body{
 }
 
 .promo-post{
-  width: 670px;
-  height: 642px;
-  margin-right: 30px;
-  padding-bottom: 60px;
-  margin-bottom: 0px;
+  width: 57.2%;
+  height: 40.125em;
+  margin-right: 2.5%;
+  padding-bottom: 3.75em;
+  margin-bottom: 0;
   box-sizing: border-box;
 }
 
 
 .promo-post h3{
-  margin-top: 50px;
-  margin-left: 33px;
-  line-height: 47px;
+  margin-top: 3.125em;
+  margin-left: 4.9%;
+  line-height: 2.925em;
  }
 
  .promo-post p{
    max-width: 100%;
-   margin-top: 0px;
-   margin-left: 33px;
+   margin-top: 0;
+   margin-left: 4.9%;
  }
 
  .main-footer{
-   min-height: 259px;
+   min-height: 16.2em;
    background-color: #303030;
-   padding: 0 115px;
-   margin-top: 80px;
+   padding: 0 8.2%;
+   margin-top: 5em;
  }
 
  .footer-top{
@@ -915,7 +927,7 @@ body{
    -webkit-box-pack: justify;
        -ms-flex-pack: justify;
            justify-content: space-between;
-   padding-top: 50px;
+   padding-top: 3.125em;
  }
 
  .footer-top .logo{
@@ -924,12 +936,12 @@ body{
            flex-grow: 1;
    text-align: left;
    color: white;
-   margin-right: 5px;
+   margin-right: 8%;
  }
 
  .logo img{
    margin: 0;
-   margin-right: 10px;
+   margin-right: 4%;
  }
 
  .logo path{
@@ -946,10 +958,12 @@ body{
    display: flex;
    list-style: none;
    padding: 0;
-   margin-right: 5px;
+   margin-right: 0.7%;
  }
 
  .footer-menu-item{
+   max-width: 11.5%;
+   display: block;
    margin-left: 43px;
  }
 
@@ -957,8 +971,8 @@ body{
    text-decoration: none;
    color: white;
    text-transform: capitalize;
-   line-height: 30px;
-   font-size: 14px;
+   line-height: 2.14em;
+   font-size: 0.875em;
  }
 
  .footer-bottom{
@@ -968,7 +982,7 @@ body{
    -webkit-box-pack: justify;
        -ms-flex-pack: justify;
            justify-content: space-between;
-   margin-top: 14px;
+   margin-top: 0.875em;
    -webkit-box-align: center;
        -ms-flex-align: center;
            align-items: center;
@@ -985,13 +999,13 @@ body{
  .copyright{
    -ms-flex-item-align: start;
        align-self: flex-start;
-   margin-top: 20px;
-   margin-right: 7px;
+   margin-top: 1.25em;
+   margin-right: 0.5%;
  }
 
  .copyright a{
    text-decoration: none;
-   font-size: 14px;
+   font-size: 0.875em;
    line-height: normal;
    color: #999;
  }
