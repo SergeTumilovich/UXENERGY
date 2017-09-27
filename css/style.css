@@ -117,6 +117,7 @@ body{
 }
 
 .main-navigation{
+  text-align: justify;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,6 +129,7 @@ body{
 }
 
 .main-menu-item{
+  display: inline;
   margin-right: 38px;
   max-width: 120px;
 }
@@ -320,6 +322,15 @@ body{
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+  transition-duration: 0.8s;
+}
+
+.feature-logo:hover img{
+
+  opacity: 0.6;
+  transition-duration: 0.8s;
+  transform-origin: center;
+  transform: rotate(360deg);
 }
 
 .feature-item h3{
@@ -341,6 +352,7 @@ body{
 }
 
 .more-features{
+  text-decoration: none;
   padding: 0 75px;
   background-color: #284a6f;
   height: 285px;
@@ -349,8 +361,9 @@ body{
 }
 
 .more-features h3{
+  position: relative;
   display: block;
-  margin-top: 100px;
+  margin-top: 150px;
   color: white;
   font-size: 16px;
   line-height: 47px;
@@ -360,8 +373,11 @@ body{
 
 .more-features h3::before{
   margin: 0;
+  position: absolute;
   display: block;
-  margin: 0 auto;
+  top: -50px;
+  left: 35%;
+  transform: translateX(-50%);
   content: "";
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -371,6 +387,27 @@ body{
   background-color: transparent;
   background-repeat: no-repeat;
   background-image: url(../img/right-arrow.svg);
+}
+
+.more-features:hover{
+  opacity: 0.6;
+}
+
+.more-features:hover h3::before{
+  animation-duration: 0.3s;
+  animation-name: double-arrow;
+}
+
+@keyframes double-arrow {
+  25%{
+    left: 45%;
+  }
+  50%{
+    left: 35%;
+  }
+  75%{
+    left: 45%;
+  }
 }
 
 .mobile{
@@ -623,11 +660,15 @@ body{
   z-index: 1;
 }
 
+.play.o{
+  opacity: 0;
+}
+
 .video-preloader{
   position: relative;
   display: block;
   width: 57%;
-  height: 27.87em;
+  height: 100%;
 }
 
 .video-preloader::before{
@@ -635,8 +676,15 @@ body{
   content: "";
   position: absolute;
   display: block;
-  width: 100.4%;
+  width: 100%;
+  height: 99%;
+}
+
+.video-preloader video{
+  width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .video-preloader:hover::before,
@@ -890,7 +938,7 @@ body{
 
 .promo-post{
   width: 57.2%;
-  height: 40.125em;
+  height: 100%;
   margin-right: 2.5%;
   padding-bottom: 3.75em;
   margin-bottom: 0;
@@ -996,6 +1044,10 @@ body{
    padding: 0;
  }
 
+ .social-item{
+   font-size: 0px;
+ }
+
  .copyright{
    -ms-flex-item-align: start;
        align-self: flex-start;
@@ -1011,13 +1063,9 @@ body{
  }
 
  .social-item a{
-   font-size: 0px;
-   text-decoration: none;
- }
-
- .social-item a::before{
    display: block;
-   content: "";
+
+   text-decoration: none;
    border: 2px solid white;
    font-size: 18px;
    line-height: 40px;
@@ -1030,6 +1078,10 @@ body{
    width: 40px;
    height: 40px;
    margin-right: 15px;
+ }
+
+ .social-item a::before{
+   content: "";
  }
 
  .twitter a::before{

@@ -6,7 +6,7 @@
   <meta name="keywords" content="UX TEMPLATE">
   <meta name="description" content="Awesome work by Jon_Snow for entrance in WebDev Community! :)"/>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -24,12 +24,12 @@
       </ul>
       <section class="login">
         <h2 class="visually-hidden">Log in</h2>
-        <a class="modal-login" href="">Log in</a>
+        <a class="modal-login" href="#">Log in</a>
       </section>
     </section>
     <section class="header-main">
       <h2 class="visually-hidden">Main menu</h2>
-      <a class="logo" href="">
+      <a class="logo" href="#">
         <img src="img/logo.svg" alt="UX ENERGY Logo" width="44" height="51"/>
         <p><span>Company</span>Name</p>
       </a>
@@ -43,13 +43,14 @@
           <li class="main-menu-item"><a href="#">Contact us</a></li>
         </ul>
       </nav>
-      <a class="btn" href="">Pricing</a>
+      <a class="btn" href="#">Pricing</a>
     </section>
   </header>
   <main>
     <section class="promo">
       <h2 class="visually-hidden">Universal Landing Page Template by Jon Snow</h2>
       <b class="lead">Universal Landing Page Template, made by UX ENERGY, helps you to make a perfect website quickly <span>and for freee!</span></b>
+      <b class="lead visually-hidden">This page has been developped by Jon Snow. All rights reserved.</b><!--Hidden part for slider-->
       <p class="promo-more">
         <b class="learnmore">Want to learn more?</b>
         <a href="#">Learn more</a>
@@ -65,32 +66,32 @@
         <li class="feature-item">
           <h3>Good Customer Service</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-          <img class="feature-logo" src="img/customers.png" alt="customers" width="79" height="79"/>
+          <a class="feature-logo" href="#"><img class="feature-logo" src="img/customers.png" alt="customers" width="79" height="79"/></a>
         </li>
         <li class="feature-item">
           <h3>Targeted features</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-          <img class="feature-logo" src="img/like.png" alt="target" width="79" height="79"/>
+          <a class="feature-logo" href="#"><img class="feature-logo" src="img/like.png" alt="target" width="79" height="79"/></a>
         </li>
         <li class="feature-item">
           <h3>Responsive</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-          <img class="feature-logo" src="img/responsive.png" alt="responsive" width="79" height="79"/>
+          <a class="feature-logo" href="#"><img class="feature-logo" src="img/responsive.png" alt="responsive" width="79" height="79"/></a>
         </li>
         <li class="feature-item">
           <h3>Time Tracking</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-          <img class="feature-logo" src="img/clock.png" alt="time track" width="79" height="79"/>
+          <a class="feature-logo" href="#"><img class="feature-logo" src="img/clock.png" alt="time track" width="79" height="79"/></a>
         </li>
         <li class="feature-item">
           <h3>Parallax menu</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-          <img class="feature-logo" src="img/parallax-menu.png" alt="parallax menu" width="79" height="79"/>
+          <a class="feature-logo" href="#"><img class="feature-logo" src="img/parallax-menu.png" alt="parallax menu" width="79" height="79"/></a>
         </li>
         <li class="feature-item">
-          <div class="more-features">
+          <a class="more-features" href="#">
             <h3>More Features</h3>
-          </div>
+          </a>
         </li>
       </ul>
     </section>
@@ -142,7 +143,9 @@
       <div class="video-content">
         <svg class="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" height="70" width="70"><path fill="#fff" d="M30 0C13.457 0 0 13.458 0 30c0 16.543 13.457 30 30 30 16.542 0 30-13.457 30-30C60 13.458 46.542 0 30 0zm15.56 30.825l-21.995 15c-.172.117-.366.176-.568.176-.156.002-.316-.038-.463-.116-.326-.172-.53-.513-.53-.884L22 15c0-.37.206-.712.532-.884.327-.176.722-.15 1.03.06l22.002 15c.27.184.435.492.435.824.002.333-.165.64-.44.825z"/></svg>
         <div class="video-preloader">
-            <img src="img/video-preloader.jpg" alt="video-review about UX ENERGY" width="670" height="446"/>
+            <video id="promo-review" poster="img/video-preloader.jpg" width="670" height="446">
+              <source src="http://static.boredpanda.com/blog/wp-content/uploads/2017/08/emilia-clarke-kit-harington-instagram-video.mp4" type="video/mp4"/>
+            </video>
         </div>
         <div class="review-description">
           <h3>Laura Jenkins, <span class="role">Ob/Gyn Student</span></h3>
@@ -226,10 +229,10 @@
     <section class="footer-bottom">
       <h2 class="visually-hidden">Our social life</h2>
       <ul class="social">
-        <li class="social-item instagram"><a href="https://www.instagram.com/ux.energy/">Instagram</a></li>
-        <li class="social-item twitter"><a href="https://www.instagram.com/ux.energy/">Twitter</a></li>
-        <li class="social-item fb"><a href="https://www.facebook.com/ux.energy">Facebook</a></li>
-        <li class="social-item youtube"><a href="https://www.youtube.com/watch?v=Zz1S-NWn0Rw">Youtube</a></li>
+        <li class="social-item instagram"><a href="https://www.instagram.com/ux.energy/"></a>Instagram</li>
+        <li class="social-item twitter"><a href="https://twitter.com/UX_Energy"></a>Twitter</li>
+        <li class="social-item fb"><a href="https://www.facebook.com/ux.energy"></a>Facebook</li>
+        <li class="social-item youtube"><a href="https://www.youtube.com/watch?v=Zz1S-NWn0Rw"></a>Youtube</li>
       </ul>
       <div class="copyright"><a href="http://ux-energy.com/">Company Name 2017 &copy; All rights reserved</a></div>
     </section>
