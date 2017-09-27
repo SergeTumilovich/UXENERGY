@@ -290,7 +290,7 @@ body{
 }
 
 .features-catalog{
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
   display: -webkit-box;
@@ -300,6 +300,7 @@ body{
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 5em;
+  max-width: 1170px;
 }
 
 .feature-item{
