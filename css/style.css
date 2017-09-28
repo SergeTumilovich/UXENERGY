@@ -196,9 +196,38 @@ body{
   font-size: 1.875em;
   line-height: 1.5em;
   max-width: 31.7%;
+  min-height: 7.5em;
   color: white;
   font-weight: bold;
   margin-top: 2.4em;
+  animation: show-lead 1s;
+}
+
+@keyframes show-lead {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.lead.visually-hidden{
+  animation: hide-lead 1s;
+}
+
+@keyframes hide-lead {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.lead a{
+  text-decoration: none;
+  color: #284a6f;
 }
 
 .promo span{
@@ -250,6 +279,16 @@ body{
   text-decoration: none;
 }
 
+.slider:hover{
+  opacity: 0.6;
+}
+
+.slider:active::before{
+  border-color: #284a6f;
+  color: #284a6f;
+}
+
+
 .slider::before{
   content: "\f104";
   padding-left: 9px;
@@ -266,6 +305,8 @@ body{
   border-radius: 50%;
   border: 2px solid white;
   margin-right: 12px;
+  transition-property: border-color, color;
+  transition-duration: 0.3s;
 }
 
 .right::before{
@@ -661,10 +702,6 @@ body{
   z-index: 1;
 }
 
-.play.o{
-  opacity: 0;
-}
-
 .video-preloader{
   position: relative;
   display: block;
@@ -678,7 +715,7 @@ body{
   position: absolute;
   display: block;
   width: 100%;
-  height: 99%;
+  height: 98%;
 }
 
 .video-preloader video{
@@ -849,7 +886,7 @@ body{
 
 .blog{
   margin-top: 2.625em;
-  max-height: 50,625em;
+  max-height: 50.625em;
   padding: 0 8.2%;
   display: -webkit-box;
   display: -ms-flexbox;
